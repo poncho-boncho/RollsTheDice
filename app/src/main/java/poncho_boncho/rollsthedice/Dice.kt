@@ -1,6 +1,7 @@
 package poncho_boncho.rollsthedice
 
-class Dice {
-    var sides = 6
-
+class Dice (val numSides: Int) {
+    fun roll(): Int{
+        return (1..numSides).random()
+    }
 }
